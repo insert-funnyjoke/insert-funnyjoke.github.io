@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  	<meta charset="utf-8">
+  	<title>Sid's Home Page</title>
+  	<meta name="author" content="">
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Images\favicon.png">
+
+  	<link href="style.css" rel="stylesheet">
+</head>
+<body style="background-color: #202124;">
+	<h1 id="welcome-back-header"style="font-size: 100px;text-align: center;color: grey;">Welcome Back, Sid!</h1>
+	<h1 id="date"style="color: grey;font-size: 60px ;">Date Loading...</h1>
+	<h1 id="time"style="color: grey;font-size: 60px ;">Time Loading...</h1>
+	<div style="position: absolute;width: 1707px;height: 200px;left: 0%;top: 78%;">
+		<hr>
+		<h2	style="margin-left: 830px;">Quick Links:</h6>
+		<div id="semicircle"></div>
+		<img src="Images/youtube_logo.jpg" class="circle" style="margin-left: 130px;" onclick="growCircle(this, 'red','https://youtube.com')"></img>
+		<img src="Images/chat_gpt_logo.jpg" class="circle" style="margin-left: 290px;" onclick="growCircle(this, '#00A67E','https://chat.openai.com/chat')"></img>
+		<img onclick="growCircle(this, '#1AB953','https://open.spotify.com')" src="Images/spotify_logo.png" class="circle" style="margin-left: 650px;"></img>	
+		<img src="Images/netflix_logo.png" class="circle" style="margin-left: 810px;height: 110px;width: 110px;" onclick="growCircle(this, '#D81F25','https://netflix.com')"></img>
+		<img src="Images/google_logo.jpg" class="circle" style="margin-left: 470px;margin-top: 65px;height:80px;width: 80px;" onclick="growCircle(this, 'white','https://google.com')"></img>
+		<div class="circle" style="cursor: default;"></div>
+	</div>
+	<script src="script.js"></script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyCSwvlBr91uPWCxxXF29NmrUVj2Zpj4FPU",
+		  authDomain: "sids-home-page.firebaseapp.com",
+		  projectId: "sids-home-page",
+		  storageBucket: "sids-home-page.appspot.com",
+		  messagingSenderId: "433388501718",
+		  appId: "1:433388501718:web:822f909d83aeda4e0da777",
+		  measurementId: "G-P9V4H14FQ0"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+</body>
+  
+</html>
