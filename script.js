@@ -16,7 +16,7 @@ var months = [
   'November',
   'December',
 ];
-var daysOfTheWeek= ['Sun', 'Mon', 'Tue', 'Wedne', 'Thu', 'Fri', 'Sat']
+var daysOfTheWeek= ['Sun', 'Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur']
 function gottaCatchMostOfEm(except) {
   var allElements = document.getElementsByTagName("*");
 
